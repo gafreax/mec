@@ -11,9 +11,11 @@ function Home() {
         <Grid item xs={12}>
             <Navbar setDrawerOpen={setOpen}/>
         </Grid>
-        <Grid item xs={12} md={10}>
+        <Grid item xs={0} md={2}></Grid>
+        <Grid item xs={12} md={8}>
             <Produtcs />
         </Grid>
+        <Grid item xs={0} md={2}></Grid>
         <Drawer open={open} onClose={() => setOpen(false)}>
             <List>
                 <ListItem>
