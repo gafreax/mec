@@ -1,0 +1,19 @@
+.cardHeader {
+    span {
+        height: 32px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 180px
+    }
+}
+
+// .cardHeader span {
+
+//     background-color: aquamarine !important;
+//     height: "32px";
+//     overflow: "hidden";
+//     text-overflow: "ellipsis";
+//     white-space: "nowrap";
+//     width: "280px"
+// }
