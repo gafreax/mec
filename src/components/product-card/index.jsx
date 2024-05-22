@@ -19,13 +19,13 @@ function ProductCard({ productId }) {
     const product = products.find(product => product.id === productId)
     const { title, description, thumbnail } = product
 
-    return <Card className="card">
+    return <Card className="card" sx={{ height:{xs:"420px", md:"600px"} }}>
         <MECCardHeader title={title} className="cardHeader" isLong={title?.length > 22} />
         <MECCardMedia component="img" 
             image={thumbnail}
             alt={title}
         />
-        <CardContent sx={{ height: "140px"}}>
+        <CardContent sx={{ height: "140px", display:{xs:"none", md:"block"}}}>
             <Typography>{description}</Typography>
         </CardContent>
         <CardActions>
