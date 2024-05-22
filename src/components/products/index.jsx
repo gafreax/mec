@@ -8,12 +8,12 @@ function Produtcs() {
 
     return <Grid container spacing={2}>
             { products?.filter(product => product).map(product => 
-                <Grid item xs={4} md={3} key={product}>
+                <Grid item sx={{px:{xs:"8px",sm:"2px"}}} xs={12} md={6} lg={4} xl={3} key={product}>
                     <ProductCard productId={product.id} />
                 </Grid>
             )  
             }
-        </Grid>
+        </Grid> 
 }
 
-export default Produtcs
+export default Produtcs;
