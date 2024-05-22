@@ -1,10 +1,19 @@
-.cardHeader {
+.cardHeaderMD {
     span {
+        width: 280px;
         height: 32px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 286px
+    }
+}
+
+.cardHeaderXS {
+    span {
+        width: 360px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 
