@@ -7,7 +7,7 @@ import Produtcs from "../components/products";
 function Home() {
     const [open, setOpen] = useState(false)
 
-    return <Grid container spacing={2} fixed>
+    return <Grid container spacing={2} fixed="true">
         <Grid item xs={12}>
             <Navbar setDrawerOpen={setOpen}/>
         </Grid>

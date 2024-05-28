@@ -16,4 +16,4 @@ function Produtcs() {
         </Grid> 
 }
 
-export default Produtcs;
+export default Produtcs

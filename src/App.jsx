@@ -9,16 +9,14 @@ import "./index.css"
 
 function App() {
   const dispatch = useDispatch()
-  
+
   useEffect(() => {
       const fetchProducts = async () => {
           const response = await fetch("https://dummyjson.com/products")
           const data = await response.json()
           dispatch(setProducts(data.products))
       }
-
       fetchProducts()
-      // dispatch(addProduct({ title: "Prodotto x", description: "Descrizione prodotto x"}))
   }, 
   /* eslint-disable-next-line */
   [])
